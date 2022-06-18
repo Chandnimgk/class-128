@@ -1,8 +1,8 @@
 song="";
-leftwristx=0;
-leftwristy=0;
-rightwristx=0;
-rightwristy=0;
+leftWristx=0;
+leftWristy=0;
+rightWristx=0;
+rightWristy=0;
 
 function preload()
 {
@@ -26,6 +26,10 @@ function modelLoaded()
 function draw()
 {
     image(video,0,0,600,500);
+
+    fill("#FF0000");
+    stroke("#FF0000");
+    circle(leftWristx,leftWristy,20);
 }
 
 function play()
